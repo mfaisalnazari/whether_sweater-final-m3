@@ -15,4 +15,12 @@ Rails.application.routes.draw do
       get '/forecast', to: 'forecast#show'
     end
   end
+
+
+  namespace :api do
+    namespace :v1 do
+      get 'book-search', to: 'book_search#book_search'
+    end
+  end
+  
 end
