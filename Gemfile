@@ -31,7 +31,7 @@ gem "bootsnap", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-
+gem "bcrypt"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
@@ -41,6 +41,7 @@ group :development, :test do
   gem "pry"
   gem "rspec-rails"
   gem "simplecov"
+  gem "shoulda-matchers"
 end
 group :test do
   gem "webmock"
