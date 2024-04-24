@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       resources :users, only: [:create]
       get '/forecast', to: 'forecast#show'
       post '/sessions', to: 'sessions#create'
+      resources :road_trip, only: [:create]
     end
   end
 end
